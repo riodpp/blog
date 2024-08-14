@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/post.astro
 title: "Belajar Kafka"
-pubDate: 2023-12-23
+pubDate: 2024-08-07
 description: "Disini kita akan belajar kafka"
 author: "riodpp"
-excerpt: 
+excerpt: Intinya Kafka ini adalah sebuah message broker dimana dia bisa menerima pesan dari produser dan menyediakan pesan kepada konsumer. 
 image:
   src:
   alt:

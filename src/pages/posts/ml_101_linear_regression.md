@@ -1,3 +1,16 @@
+---
+layout: ../../layouts/post.astro
+title: "Machine learning with linear regression"
+pubDate: 2023-12-23
+description: "Here, I want to share what I learn about machine learning."
+author: "riodpp"
+excerpt: Linear regression is a learning algorithm to predict value by using straight line that depict the relation between dependent variable and independent variable.
+image:
+  src:
+  alt:
+tags: ["ml", "ml engineer"]
+---
+
 Hei everyone welcome to my blog. 
 Here, I want to share what I learn about machine learning. I following this [zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master) from DataClubTalk.
 If you want to, just follow the link, they have zoomcamp for data engineer, MLops, and machine learning.

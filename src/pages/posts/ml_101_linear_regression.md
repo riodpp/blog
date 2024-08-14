@@ -8,7 +8,7 @@ excerpt: Linear regression is a learning algorithm to predict value by using str
 image:
   src:
   alt:
-tags: ["ml", "ml engineer"]
+tags: ["tag1", "tag2", "tag3"]
 ---
 
 Hei everyone welcome to my blog. 

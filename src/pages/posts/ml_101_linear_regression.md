@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/post.astro
 title: "Machine learning with linear regression"
-pubDate: 2023-12-23
+pubDate: 2024-08-14
 description: "Here, I want to share what I learn about machine learning."
 author: "riodpp"
 excerpt: Linear regression is a learning algorithm to predict value by using straight line that depict the relation between dependent variable and independent variable.
 image:
   src:
   alt:
-tags: ["tag1", "tag2", "tag3"]
+tags: ["ml", "ml engineer"]
 ---
 
 Hei everyone welcome to my blog. 

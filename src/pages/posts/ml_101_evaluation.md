@@ -15,7 +15,9 @@ In the previous article we already learn about binary classifier. For summary, a
 
 We also calculate the accuracy of our model with counting proportion of correctly predicted instance from total number of instance.
 
-\[ \text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Number of Predictions}} \]
+$$
+\text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Number of Predictions}}
+$$
 
 But, is it enough to just using accuracy to evaluate binary classifier? 
 To answer this, consider a dataset for detecting a rare disease where only 1% of the samples are positive (disease) and 99% are negative (no disease). Let's say we have 10,000 samples:
@@ -25,7 +27,9 @@ To answer this, consider a dataset for detecting a rare disease where only 1% of
 
 Suppose we have a binary classifier that always predicts "no disease" (negative). The accuracy of this classifier would be:
 
-\[ \text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Number of Predictions}} = \frac{9,900}{10,000} = 99\% \]
+$$
+\text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Number of Predictions}} = \frac{9,900}{10,000} = 99\%
+$$
 
 Despite the high accuracy, this classifier is useless because it never identifies the positive cases. This is why accuracy is not a suitable metric for imbalanced datasets. Instead, metrics like precision, recall, F1 score, and AUC-ROC provide a better evaluation of the model's performance in such scenarios. But, before we dive to other metrics, I want to share about confussion table for the bridge to the other metrics.
 
@@ -72,23 +76,31 @@ Easy isn't it? As you already understand this concept we can go through other me
 ## Recall
 Recall, also known as sensitivity or true positive rate, is a metric used to evaluate the performance of a classification model. It measures the proportion of **actual positives that are correctly identified by the model**.
 
-\[ \text{Recall} = \frac{TP}{TP + FN} \]
+$$
+\text{Recall} = \frac{TP}{TP + FN}
+$$
 
 Using the confusion table from the previous example, the recall can be calculated as follows:
 
-
-\[ \text{Recall} = \frac{3}{3 + 2} = \frac{3}{5} = 0.6 \]
+$$
+\text{Recall} = \frac{3}{3 + 2} = \frac{3}{5} = 0.6
+$$
 
 This means that the model correctly identifies 60% of the actual positive cases.
 
 ## Precision
 Precision is a metric used to evaluate the performance of a classification model, particularly in the context of binary classification. It measures the proportion of **positive predictions that are actually correct**.
 
-\[ \text{Precision} = \frac{TP}{TP + FP} \]
+$$
+\text{Precision} = \frac{TP}{TP + FP}
+$$
 
 Using the confusion table from the previous example, the precision can be calculated as follows:
 
-\[ \text{Precision} = \frac{3}{3 + 1} = \frac{3}{4} = 0.75 \]
+$$
+\text{Precision} = \frac{3}{3 + 1} = \frac{3}{4} = 0.75
+$$
+
 
 This means that 75% of the instances predicted as positive are actually positive.
 
@@ -99,9 +111,18 @@ ROC is a curve used to evaluate the performance of a binary classification model
 
 Below is the formula of the TPR and FPR
 
-True Positive Rate (TPR): Also known as Recall or Sensitivity, it is calculated as: \[ \text{TPR(Recall)} = \frac{\text{TP}}{\text{TP} + \text{FN}} \]
+True Positive Rate (TPR): Also known as Recall or Sensitivity, it is calculated as: 
 
-False Positive Rate (FPR): It is calculated as: \[ \text{FPR} = \frac{\text{FP}}{\text{FP} + \text{TN}} \]
+$$
+\text{TPR(Recall)} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+$$
+
+
+False Positive Rate (FPR): It is calculated as:
+
+$$
+\text{FPR} = \frac{\text{FP}}{\text{FP} + \text{TN}}
+$$
 
 The ROC curve is created by plotting the TPR against the FPR at different threshold values. Each point on the ROC curve represents a different threshold, showing the trade-off between sensitivity (recall) and FPR at various threshold levels.
 

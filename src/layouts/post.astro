@@ -4,12 +4,12 @@ import Base from '@/layouts/Base.astro';
 import PostHeader from '@/components/PostHeader.astro';
 import PostContent from '@/components/PostContent.astro';
 
-const { description } = AppConfig;
-
 const { frontmatter } = Astro.props;
+const { description } = AppConfig;
+const postDescription = frontmatter.description ?? description;
 ---
 
-<Base head={{ title: frontmatter.title, description }}>
+<Base head={{ title: frontmatter.title, description: postDescription }}>
 	<div class="mx-auto w-full max-w-screen-md">
 		<PostHeader
 			title={frontmatter.title}
@@ -22,4 +22,3 @@ const { frontmatter } = Astro.props;
 		<PostContent><slot /></PostContent>
 	</div>
 </Base>
-
